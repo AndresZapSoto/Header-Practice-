@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headers Practice 01</title>
+
+<style>
+    body {
+        background-color: aquamarine;
+        margin: 0; /* Eliminate any margin arround header*/
+    }
+    .container {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        height: fit-content;
+        color: white;
+        background-color: rgb(231, 207, 133);
+    }
+    .header {
+        border: 2px solid white;
+        display: flex;
+        justify-content: space-between; /*Separa contenidos entre si.*/
+    }
+    .nav {
+     /*   border: 2px solid white; */
+        display: flex;
+        float: right;
+        align-items: center;
+        padding-right: 20px;
+    }
+    .logo img {
+       /* border: 2px solid white;*/
+        width: 60%;
+        height: max-content;
+        padding: 10px;
+    }
+    .nav li {
+        list-style-type: none;
+        padding: 5px;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        padding: 3px;
+    }
+    a:hover{
+        color:black;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="Resources/logo01.png" alt="Logo">
+        </div>
+        <ul class="nav">
+            <li><a href="#">Company</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
+    
+</body>
+</html>
