@@ -8,11 +8,11 @@
 
 <style>
     body {
-        background-color: aquamarine;
+        background-color: rgb(35, 158, 117);
         margin: 0; /* Eliminate any margin arround header*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .container {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 20px;
         display: flex;
         color: white;
@@ -25,7 +25,7 @@
         float: right;
         align-items: right;
         padding-right: 20px;
-        flex-direction: row;;
+        flex-direction: row;
     }
     .logo img {
        /*border: 2px solid white;*/
@@ -48,6 +48,20 @@
         color:black;
         text-decoration: underline 10px;
         font-size: 25px;
+    }
+
+    .info_container {
+        padding: 30px 80px;
+        color: rgb(230, 227, 227);
+    }
+
+    .info_container li { 
+        list-style-image: url(Resources/icons_list.png);
+        padding: 10px;
+        
+    }
+    .info_container li i {
+        text-decoration: underline;
     }
 
     @media screen and (max-width: 850px) {
@@ -82,6 +96,17 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
+</div>
+<div class="info_container">
+    <h2>About Header Exercise</h2>
+    <h3>This header was made with:</h3>
+    <ul>
+        <li>A main container for <strong>header</strong> using <i>Flex</i></li>
+        <li>Container for logo positioned on left side of header using <i>flex-direction: row</i></li>
+        <li>Container for menu bar positioned on right side of header using  <i>flex-direction: row</i> and <i>display: flex</i></li>
+        <li>Menu nav items using <i>align-items: right</i></li>
+        <li><i>Hover</i> settings with color black, underline and font-size</font-size></li>
+    </ul>
 </div>
     
 </body>
