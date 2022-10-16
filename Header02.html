@@ -5,96 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Practice 02</title>
-
-<style>
-    body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: cadetblue;
-        margin: 0;
-    }
-    .container {
-       /* border: 2px solid white;*/
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 110px;
-    }
-    .logo {
-       /* border: 2px solid white;*/
-        display: flex;
-        
-    }
-    .logo h1 {
-        /*border: 2px solid white;*/
-        background-color: rgb(39, 39, 109);
-        color: white;
-        letter-spacing: -8px;
-        font-size: 50px;
-        padding: 10px 20px 10px 10px;
-    }
-
-    hr {
-        margin: 0;
-    }
-/* #### Style for bar nav menu #### */
-    .nav_menu {
-       /*border: 2px solid black;*/
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .list_menu {
-        width: 900px;
-       /* border: 2px solid black;*/
-    }
-    li {
-       /* border: 1px solid black;*/
-        list-style-type: none;
-        display: inline;
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-    li a {
-        color: black;
-        text-decoration: none;
-        margin-right: 30px;
-        font-weight: bold;
-        font-size: 17px;
-    }
-
-    .list_menu > ul  {
-        display: flex;
-        float: left;
-    }
-    .list_menu li ul {
-        margin: 10px 0;
-       /* border: 1px solid black;*/
-        display: none;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.433);
-    }
-    .list_menu li ul li {
-        padding: 15px 0;
-    }
-    .list_menu li:hover > ul {
-        display:grid;
-        border-bottom-style: none;
-        justify-content: flex-end;
-    }
-    a:hover {
-        color: rgb(39, 39, 109);
-/* next 4 lines to put a underline separate from text */
-        border-bottom-style: solid;
-        border-bottom-width: 6px;
-        border-bottom-color: rgb(39, 39, 109);
-        padding-bottom: 10px;
-    }
-
-</style>
+    <link rel="stylesheet" href="styles_header02.css">
 </head>
 <body>
+<header>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <img src="Resources/bar_menu.png" alt="Bar menu" width="30px">
+    </label>
+</header>
 
 <div class="container">
     <div class="logo">
@@ -144,6 +63,19 @@
         </ul>
     </div>
 </div>
+
+<div class="info_container">
+    <h2>About Header Exercise</h2>
+    <h3>This header was made with:</h3>
+    <ul>
+        <li>The <strong>Brand Logo</strong> was made using CSS styles</li>
+        <li>Two container, one for <i>Brand Logo</i>, and other for <i>Navigation bar menu</i></li>
+        <li>The menu and dropdown menu using <i>flex</i></li>
+        <li><i>Hover</i> settings to change color and underline for menu and dropdow menu</li>
+    </ul>
+</div>
+
+
     
 </body>
 </html>
